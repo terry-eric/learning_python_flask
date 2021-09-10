@@ -3,7 +3,7 @@
 flask的基礎架設網站從以下程式碼開始：
 
 ```
-from flask import *
+from flask import F
 def test():
 
    app = Flask(__name__)
@@ -16,7 +16,7 @@ def test():
 if __name__ == '__main__':
     test()
 ```
-因為我們要用到Flask這個物件，所以一開始就要做出宣告，* 是指引入所有flask內的函式。
+因為我們要用到Flask這個物件，所以一開始就要做出宣告，* 是指引入所有flask內的函式，建議是只引入需要的函式，避免占空間和名字重複的問題。
 
 ```from flask import *```  
 
