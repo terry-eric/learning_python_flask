@@ -49,7 +49,7 @@ reture將內文顯現於介面，render_template()則是呼叫HTML的檔案，�
 
 #HTML、CSS檔放置的位置
 
-![image](https://user-images.githubusercontent.com/67619529/132873855-81f6c5a4-65c6-4df8-bd6d-4b2861048fc8.png)
+<img src="![image](https://user-images.githubusercontent.com/67619529/132873855-81f6c5a4-65c6-4df8-bd6d-4b2861048fc8.png)" alt="Cover" width="50%"/>
 
 
 
