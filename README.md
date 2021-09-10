@@ -3,20 +3,23 @@
 flask的基礎架設網站從以下程式碼開始：
 
 ```
-from flask import Flask  
-app = Flask(__name__)  
+from flask import *
+def test():
 
-@app.route("/")  
-def home():
-    return render_template("放入.html檔案")
-app.run()
-    
+   app = Flask(__name__)
+
+   @app.route("/")
+   def home():
+       return render_template("test.html")
+   app.run(debug=Ture)
+
 if __name__ == '__main__':
-    home()
-```
-因為我們要用到Flask這個物件，所以一開始就要做出宣告。
+    test()
 
-```from flask import Flask```  
+```
+因為我們要用到Flask這個物件，所以一開始就要做出宣告，* 是指引入所有flask內的函式。
+
+```from flask import *```  
 
 初始化Flask物件，並貼上app這個標籤。接著我們就可以很方便的使用這個物件裡面的各種功能。
 
@@ -32,7 +35,10 @@ if __name__ == '__main__':
 
 就是執行的意思，debug救世會將更改程式碼儲存、重啟，變為更新後的樣子。
 
-```if __name__ == '__main__':
-        test()```
-    
+```
+if __name__ == '__main__':
+    test()
+```
+
+如果這個程式碼是主要執行檔的話才會執行
 
