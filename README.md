@@ -3,7 +3,7 @@
 flask的基礎架設網站從以下程式碼開始：
 
 ```
-from flask import F
+from flask import Flask
 def test():
 
    app = Flask(__name__)
