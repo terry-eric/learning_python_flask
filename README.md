@@ -36,7 +36,7 @@ def為定義一個函式，後方為函式的名稱。
 
 ```return render_template("test.html")```
 
-reture將內文顯現於介面。
+reture將內文顯現於介面，render_template()則是呼叫HTML的檔案，通常不會在python裡撰寫html的架構，所以需要這個功能呼叫html的檔案；檔案方面須注意放置的位置和名稱會在下方做說明。
 
 ```app.run(debug=Ture)```
 
@@ -45,4 +45,11 @@ reture將內文顯現於介面。
 ```if __name__ == '__main__':```
 
 如果這個程式碼是主要執行檔的話才會執行。
+
+
+#HTML、CSS檔放置的位置
+
+![image](https://user-images.githubusercontent.com/67619529/132873855-81f6c5a4-65c6-4df8-bd6d-4b2861048fc8.png)
+
+
 
