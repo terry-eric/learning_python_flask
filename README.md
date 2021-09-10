@@ -8,9 +8,11 @@ app = Flask(__name__)
 
 @app.route("/")  
 def home():
-    return 
-
+    return render_template("放入.html檔案")
 app.run()
+    
+if __name__ == '__main__':
+    home()
 ```
 因為我們要用到Flask這個物件，所以一開始就要做出宣告。
 
@@ -23,3 +25,5 @@ app.run()
 創造出主網域下的"/"這個網址，並定義了請求(request)該網址時可用的手段。舉例來說，主網域是.123.com/" ，那麼用@app.route("/")就是創造出了".123.com/" 。而用@app.route("/456")就是創造出了"123.com/456" 。
 
 ```@app.route("/")```
+就是執行的意思，debug救世會將更改程式碼儲存、重啟，變為更新後的樣子。
+```app.run(debug=Ture)```
