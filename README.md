@@ -29,7 +29,15 @@ if __name__ == '__main__':
 
 ```@app.route("/")```
 
-告訴你怎樣的url可以call怎樣的function
+告訴你怎樣的url可以call怎樣的function，url會這樣顯示localhost:5000/斜線後是接你的函式名稱。
+
+```def home():```
+
+def為定義一個函式後方為函式的名稱。
+
+```return render_template("test.html")```
+
+reture將內文顯現於介面。
 
 ```app.run(debug=Ture)```
 
@@ -37,5 +45,5 @@ if __name__ == '__main__':
 
 ```if __name__ == '__main__':```
 
-如果這個程式碼是主要執行檔的話才會執行
+如果這個程式碼是主要執行檔的話才會執行。
 
