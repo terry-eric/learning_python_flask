@@ -50,6 +50,7 @@ reture將內文顯現於介面，render_template()則是呼叫HTML的檔案，�
 # HTML、CSS檔放置的位置
 
 main為撰寫flask的python檔，當然名字能做更動，templates為html所要放置的資料夾名稱，static則為css所放置的資料夾名稱，名稱錯誤會抓不到檔案，這點需要小心。
+
 <img src="https://user-images.githubusercontent.com/67619529/132873855-81f6c5a4-65c6-4df8-bd6d-4b2861048fc8.png" alt="Cover" width="50%"/>
 
 
