@@ -9,7 +9,7 @@ def test():
    app = Flask(__name__)
 
    @app.route("/")
-   def home():
+   def test():
        return render_template("test.html")
    app.run(debug=Ture)
 
@@ -29,11 +29,11 @@ if __name__ == '__main__':
 
 ```@app.route("/")```
 
-告訴你怎樣的url可以call怎樣的function，url會這樣顯示localhost:5000/斜線後是接你的函式名稱。
+告訴你怎樣的url可以call怎樣的function，url會這樣顯示localhost:5000/，斜線後是接你的函式名稱，例如：def test()，出來就是localhost:5000/test。
 
 ```def home():```
 
-def為定義一個函式後方為函式的名稱。
+def為定義一個函式，後方為函式的名稱。
 
 ```return render_template("test.html")```
 
